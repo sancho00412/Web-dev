@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    background-color: black;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav h3 {
+    color: white;
+    margin: 0; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.list {
+    width: 80%;
+    padding-bottom: 10px; 
+}
+
+.list h1 {
+    margin: 0; 
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 80%; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+}
+
+.addBtn {
+    padding: 10px;
+    background: blue;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-right: 70px;
+}
+
+ul {
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+    margin-right: 130px;
+}
+
+ul li {
+    display: flex; 
+    align-items: center;
+    width: 900px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    padding: 15px 8px 12px 120px; 
+    background: white;
+    font-size: 18px;
+    border: 1px solid rgb(222, 222, 222); 
+}
+
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+.checkBtn,
+.deleteBtn {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.checkBtn {
+    left: 10px;
+    margin-top: -12px; 
+    color: #555;
+}
+
+.deleteBtn {
+    right: 10px;
+    margin-top: -12px;
+    color: red;
+}
