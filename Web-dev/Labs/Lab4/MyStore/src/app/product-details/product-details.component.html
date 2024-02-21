@@ -1,0 +1,19 @@
+<div class="content">
+    <h2>Product Details</h2>
+
+    <div class="main">
+        <div class="product-details" *ngIf="product">
+            <div class="characteristics">
+                <h3>{{product.name}}</h3>
+                <h4>Price: {{product.price}} ₸</h4>
+                <p>Color: {{product.color}}</p>
+                <p>Operation System: {{product.Os}}</p>
+                <p *ngIf="product.hasNfc">Has NFC</p>
+                <p>Ram: {{product.ram}} GB</p>
+                <p>Rom: {{product.rom}} GB</p>
+                <p>Camera: {{product.camera}} GB</p>
+            </div>
+            <img src="{{product.imageUrl}}" alt="product photo">
+        </div>
+    </div>
+</div>
