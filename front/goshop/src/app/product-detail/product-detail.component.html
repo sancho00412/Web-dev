@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Card Design - FantacyDesigns</title>
+
+
+</head>
+
+<body>
+
+  <section class="product-detail" *ngIf="product">
+	<div class="product__photo">
+		<div class="photo-container">
+			<div class="photo-main">
+
+				<img src="{{product.ImagePath}}" alt="photo">
+			</div>
+			<div class="photo-album">
+				<ul>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="product__info">
+		<div class="title">
+			<h1>{{product.Name}}</h1>
+			<span></span>
+		</div>
+		<div class="prices">
+			₸ <span>{{product.Price}}</span>
+		</div>
+		<div class="variant">
+			<h3></h3>
+			<ul>
+				
+			</ul>
+		</div>
+		<div class="description">
+			<h2>Подробнее в WhatsAPP </h2>
+			<h2>87762570384 </h2>
+			<ul>
+				
+			
+			</ul>
+		</div>
+		<button class="buy--btn">Buy</button>
+	</div>
+</section>
+
+<footer>
+	<p></p>
+</footer>
+
+  </body>
+</html>
+
